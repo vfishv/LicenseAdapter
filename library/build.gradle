@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
-apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'com.jfrog.bintray'
 
 android {
   compileSdkVersion 29
@@ -105,6 +105,7 @@ publishing {
   }
 }
 
+/*
 bintray {
   def metadata = project.rootProject.ext.metadata
 
@@ -126,7 +127,7 @@ bintray {
     }
   }
 }
-
+*/
 javadoc {
   options.charSet = 'UTF-8'
   options.encoding = 'UTF-8'
@@ -134,4 +135,4 @@ javadoc {
 }
 
 project.ext.publicationName = "release"
-apply from: rootProject.file('gradle/release.gradle')
+//apply from: rootProject.file('gradle/release.gradle')
